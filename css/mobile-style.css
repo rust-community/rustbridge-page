@@ -1,0 +1,236 @@
+@import 'https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700';
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: snow;
+}
+
+h1, h2, h3, h4, #team li, p, a {
+  max-width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Fira Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;  font-weight: normal;
+  font-size: 15pt;
+  line-height: 25pt;
+}
+
+h1 {
+  font-size: 25pt;
+  color: black;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+}
+
+h3 {
+  color: snow;
+  text-align: center;
+}
+
+h3 span { color: black; }
+
+h4 {
+  color: black;
+  text-align: left;
+}
+
+span { color: #23d2af; }
+
+#team li, p, p a {
+  font-size: 12pt;
+  line-height: 16pt;
+  text-align: left;
+  color: black;
+}
+
+#workshops a, #team a {
+  text-decoration: none;
+  color: #23d2af;
+}
+
+#footer {
+   position:fixed;
+   left: 0px;
+   bottom: 15px;
+   height: 200px;
+   width: 100%;
+   background: snow;
+   text-align: center;
+}
+
+/* IE 6 */
+* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+form {
+  text-align: center;
+}
+.out-of-view-input {
+  display: none;
+}
+
+.btn, .form-control  {
+  font-size: 15pt;
+  line-height: 25pt;
+  text-align: center;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+}
+
+.btn  {
+  height: 80px;
+  width: 200px;
+  border: none;
+  color: snow;
+  background: #23d2af;
+}
+
+.form-control  {
+  height: 72px;
+  width: 400px;
+  border: 4px solid #23d2af;
+  color: grey;
+  background: snow;
+}
+
+.rust-logo {
+  height: 200px;
+  width: auto;
+  margin-top: -100px;
+}
+
+.footer-line-top {
+  height: 4px;
+  margin-top: 15px;
+  background: black;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav#main a:hover, nav#main li.active a {
+  color: black;
+  border-bottom: 4px solid black;
+}
+
+nav#main a {
+  font-size: 15pt;
+  line-height: 25pt;
+  color: #23d2af;
+}
+
+#about {
+  width:100%;
+  height: 100vh;
+  background: rgba(35,210,175,1);
+  background: -moz-linear-gradient(top, rgba(35,210,175,1) 0%, rgba(145,232,215,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(35,210,175,1)), color-stop(100%, rgba(145,232,215,1)));
+  background: -webkit-linear-gradient(top, rgba(35,210,175,1) 0%, rgba(145,232,215,1) 100%);
+  background: -o-linear-gradient(top, rgba(35,210,175,1) 0%, rgba(145,232,215,1) 100%);
+  background: -ms-linear-gradient(top, rgba(35,210,175,1) 0%, rgba(145,232,215,1) 100%);
+  background: linear-gradient(to bottom, rgba(35,210,175,1) 0%, rgba(145,232,215,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23d2af', endColorstr='#91e8d7', GradientType=0 );
+}
+
+#workshops, #materials, #team, #news {
+  width: 100%;
+  min-height: 100vh;
+  border-top: 15px solid snow;
+}
+
+#materials, #team, #news {
+  background: rgba(233,250,247,1);
+}
+
+#workshops {
+  background: rgba(145,232,215,1);
+  background: -moz-linear-gradient(top, rgba(145,232,215,1) 0%, rgba(233,250,247,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(145,232,215,1)), color-stop(100%, rgba(233,250,247,1)));
+  background: -webkit-linear-gradient(top, rgba(145,232,215,1) 0%, rgba(233,250,247,1) 100%);
+  background: -o-linear-gradient(top, rgba(145,232,215,1) 0%, rgba(233,250,247,1) 100%);
+  background: -ms-linear-gradient(top, rgba(145,232,215,1) 0%, rgba(233,250,247,1) 100%);
+  background: linear-gradient(to bottom, rgba(145,232,215,1) 0%, rgba(233,250,247,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91e8d7', endColorstr='#e9faf7', GradientType=0 );
+}
+
+nav#main li {
+  list-style: none;
+  margin-top: 15px;
+}
+
+nav#main a{
+  text-decoration: none;
+  margin: 15px 20px 0px 20px;
+  padding-bottom: 15px;
+}
+
+.copy {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.workshop-container {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 40px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.workshop-box {
+  display: flex;
+  flex-direction: row;
+  background: snow;
+  padding: 40px;
+  margin-bottom: 10px;
+}
+
+.workshop-content {
+flex: 1;
+}
+
+.workshop-img {
+  max-height: 200px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.team-container {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.team-box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: snow;
+  margin-right: 20px;
+}
+
+.team-content {
+  flex: 1;
+  align-self: center;
+}
+
+.team-img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}

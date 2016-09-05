@@ -1,0 +1,9 @@
+@media only screen and (min-width: 500px) {
+  body {
+    background: snow;
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    background: snow;
+}
